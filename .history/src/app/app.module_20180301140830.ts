@@ -9,7 +9,6 @@ import { ShowsListComponent } from './shows-list/shows-list.component';
 
 import { ArtistComponent } from './artist/artist.component';
 import { ArtistlistComponent } from './artistlist/artistlist.component';
-import { RouterModule, Routes } from '@angular/router';
 
 
 
