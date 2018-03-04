@@ -9,17 +9,17 @@ const artists: Artist[] = [
   {_id: 4, name: 'Barkley', cover: 'url', genre: ['Dance', 'Hip-hop'], eventType: ['Public', 'house'], description: "Awesome!", socialMedia: ['FB','Twitter','Instagram'], linktosongs: ['url soundcloud', 'url youtube']},
   {_id: 5, name: 'Prince', cover: 'url', genre: ['Jewish', 'Goyish','Marshian'], eventType: ['Public', 'house'], description: "Awesome!", socialMedia: ['FB','Twitter','Instagram'], linktosongs: ['url soundcloud', 'url youtube']}
 ];
-const shows: Show[] = [
-  {_id:1, artist: 'Woof',title: 'Barkathon',description: 'An event dedicated to barking very loud',price: 0,eventType: ['Public','Pub'],host: 'Shachar', map: 'url', ticketQuantity: 50 },
+// const shows: Show[] = [
+//   {_id:1, artist: 'Woof',title: 'Barkathon',description: 'An event dedicated to barking very loud',price: 0,eventType: ['Public','Pub'],host: 'Shachar', map: 'url', ticketQuantity: 50 }
   
-]
+// ]
 @Injectable()
 export class DataService {
   perfomers: Artist[] = artists;
   constructor() { }
 
   getArtists(): Artist[] {
-    console.log("Test")
+    // console.log("Test")
     return this.perfomers;
   }
 
