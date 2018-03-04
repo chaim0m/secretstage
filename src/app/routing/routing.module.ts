@@ -3,15 +3,16 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ArtistComponent } from '../artist/artist.component';
 import { ArtistlistComponent } from '../artistlist/artistlist.component';
+import { ShowsListComponent } from '../shows-list/shows-list.component';
+import { ShowComponent } from '../show/show.component';
+import { HomeComponent } from '../home/home.component';
 
 const routes: Routes = [
-  { path: '', component: ArtistlistComponent},
+  { path: '', component: HomeComponent},
   { path: 'artistlist', component: ArtistlistComponent },
   { path: 'artist/:id', component: ArtistComponent},
-  // { path: 'companies', component: CompaniesComponent },
-  // { path: 'add-company', component: AddCompanyComponent},
-  // { path: 'company/:id', component: CompanyDetailsComponent},
-  // { path: 'companies', component: CompaniesComponent},
+  { path: 'show/:id', component: ShowComponent },
+  { path: 'showslist', component: ShowsListComponent}
 ];
 
 @NgModule({

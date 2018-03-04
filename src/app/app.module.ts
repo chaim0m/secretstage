@@ -10,6 +10,7 @@ import { ArtistComponent } from './artist/artist.component';
 import { ArtistlistComponent } from './artistlist/artistlist.component';
 import { RouterModule, Routes } from '@angular/router';
 import { RoutingModule } from './routing/routing.module';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -19,7 +20,8 @@ import { RoutingModule } from './routing/routing.module';
     ShowComponent,
     ShowsListComponent,
     ArtistComponent,
-    ArtistlistComponent
+    ArtistlistComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
