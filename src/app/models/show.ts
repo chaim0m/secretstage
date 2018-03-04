@@ -8,6 +8,8 @@ export default class Show {
     host: string; // added feature - might be concerted to model type.
     map: string;
     ticketQuantity: number;
+    date: Date;
+    time: string;
 }
 
 // might need to add 
