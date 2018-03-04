@@ -11,6 +11,8 @@ import { ArtistlistComponent } from './artistlist/artistlist.component';
 import { RouterModule, Routes } from '@angular/router';
 import { RoutingModule } from './routing/routing.module';
 import { HomeComponent } from './home/home.component';
+import { ArtistprofileComponent } from './artistprofile/artistprofile.component';
+import { ShowpageComponent } from './showpage/showpage.component';
 
 
 
@@ -21,7 +23,9 @@ import { HomeComponent } from './home/home.component';
     ShowsListComponent,
     ArtistComponent,
     ArtistlistComponent,
-    HomeComponent
+    HomeComponent,
+    ArtistprofileComponent,
+    ShowpageComponent
   ],
   imports: [
     BrowserModule,
