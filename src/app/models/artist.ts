@@ -3,7 +3,7 @@ export default class Artist {
     name: string;
     cover: string;
     genre: string[];
-    enventType: string[];
+    eventType: string[];
     description: string;
     socialMedia: string[];
     linktosongs: string[];
