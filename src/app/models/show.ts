@@ -3,11 +3,13 @@ export default class Show {
     artist: string;
     title: string;
     description: string;
-    price;
+    price: number;
     eventType: string;
     host: string; // added feature - might be concerted to model type.
     map: string;
-    ticketQuentity: number;
+    ticketQuantity: number;
+    date: Date;
+    time: string;
 }
 
 // might need to add 
