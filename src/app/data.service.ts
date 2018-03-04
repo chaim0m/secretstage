@@ -13,6 +13,7 @@ export class DataService {
   constructor() { }
 
   getArtists(): Artist[] {
+    console.log("Test")
     return this.perfomers;
   }
 

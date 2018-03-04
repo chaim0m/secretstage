@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-
+import { DataService } from './data.service';
 import { ShowComponent } from './show/show.component';
 import { ShowsListComponent } from './shows-list/shows-list.component';
 import { ArtistComponent } from './artist/artist.component';
@@ -26,8 +26,9 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     RoutingModule
+    
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
