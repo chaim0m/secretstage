@@ -5,7 +5,7 @@ import { ArtistComponent } from '../artist/artist.component';
 import { ArtistlistComponent } from '../artistlist/artistlist.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent},
+  { path: '', component: ArtistlistComponent},
   { path: 'artistlist', component: ArtistlistComponent },
   { path: 'artist/:id', component: ArtistComponent},
   // { path: 'companies', component: CompaniesComponent },
@@ -16,8 +16,9 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    CommonModule
+    RouterModule.forRoot(routes)
   ],
+  exports: [RouterModule],
   declarations: []
 })
 export class RoutingModule { }

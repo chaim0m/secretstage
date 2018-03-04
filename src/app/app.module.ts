@@ -6,10 +6,10 @@ import { AppComponent } from './app.component';
 
 import { ShowComponent } from './show/show.component';
 import { ShowsListComponent } from './shows-list/shows-list.component';
-
 import { ArtistComponent } from './artist/artist.component';
 import { ArtistlistComponent } from './artistlist/artistlist.component';
 import { RouterModule, Routes } from '@angular/router';
+import { RoutingModule } from './routing/routing.module';
 
 
 
@@ -22,7 +22,8 @@ import { RouterModule, Routes } from '@angular/router';
     ArtistlistComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
