@@ -1,10 +1,10 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Artist } from '../models/artist';
+import  Artist  from '../models/artist';
 
 @Component({
   selector: 'artist',
-  templateUrl: './movie.component.html',
-  styleUrls: ['./movie.component.css']
+  templateUrl: './artist.component.html',
+  styleUrls: ['./artist.component.css']
 })
 
 export class ArtistComponent implements OnInit {
