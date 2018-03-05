@@ -134,7 +134,47 @@
         <h5 class="heading-10"> Who is the Host?</h5>
         <p class="paragraph-6">Host detail</p>
       </div>
-
+      <div id="map" class="event-map">
+        <div class="maps-embed w-embed w-script">
+          <!-- <script>
+      // This example creates circles on the map, representing populations in North
+      // America.
+      // First, create an object containing LatLng and population for each city.
+      var secretmap = {
+        secretlocation: {
+          center: {lat: , lng: },
+          size: 20
+        }
+      }; -->
+          <!-- function initMap() {
+        // Create the map.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: {lat: , lng: },
+          scrollwheel: false,
+          mapTypeId: 'terrain'
+        });
+        // Construct the circle for each value in citymap.
+        // Note: We scale the area of the circle based on the population.
+        for (var city in secretmap) {
+          // Add the circle for this city to the map.
+          var cityCircle = new google.maps.Circle({
+            strokeColor: '#FF0000',
+            strokeOpacity: 0.8,
+            strokeWeight: 0,
+            fillColor: '#49c0e8',
+            fillOpacity: 0.35,
+            map: map,
+            center: secretmap[city].center,
+            radius: Math.sqrt(secretmap[city].size) * 100
+          });
+        }
+      }
+    </script>
+          <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLgGowWY6qA_GTGEGV1JBUrptNdqkJRuw&callback=initMap">
+    </script> -->
+        </div>
+      </div>
     </div>
   </div>
   <div data-ix="buy-overlay-init" class="buy-overlay"></div>
