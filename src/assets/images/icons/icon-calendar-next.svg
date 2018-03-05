@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="13px" viewBox="0 0 8 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-calendar-next</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="AssetMaker" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.400000006">
+        <g id="-Asset-Maker" transform="translate(-841.000000, -438.000000)" fill="#F3F5F5">
+            <g id="fa-angle-right" transform="translate(842.000000, 438.000000)">
+                <path d="M-0.225,12.054 L0.403,12.66 C0.471,12.75 0.583,12.795 0.673,12.795 C0.785,12.795 0.875,12.75 0.964,12.66 L6.8,6.824 C6.89,6.757 6.935,6.645 6.935,6.555 C6.935,6.443 6.89,6.331 6.8,6.263 L0.964,0.427 C0.875,0.338 0.785,0.293 0.673,0.293 C0.583,0.293 0.471,0.338 0.403,0.427 L-0.225,1.056 C-0.315,1.123 -0.36,1.235 -0.36,1.325 C-0.36,1.437 -0.315,1.55 -0.225,1.617 L4.69,6.555 L-0.225,11.471 C-0.315,11.56 -0.36,11.65 -0.36,11.762 C-0.36,11.875 -0.315,11.964 -0.225,12.054" id="Fill-63"></path>
+            </g>
+        </g>
+    </g>
+</svg>

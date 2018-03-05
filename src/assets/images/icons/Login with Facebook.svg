@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="21px" viewBox="0 0 11 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Login with Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="AssetMaker" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="-Asset-Maker" transform="translate(-816.000000, -289.000000)" fill="#FFFFFF">
+            <path d="M819.187,300.335 L819.187,309.83 L823.025,309.83 L823.025,300.335 L826.213,300.335 L826.706,296.632 L823.025,296.632 L823.025,294.252 C823.025,293.669 823.16,293.22 823.407,292.906 C823.654,292.614 824.125,292.457 824.843,292.457 L826.796,292.457 L826.796,289.157 C826.123,289.045 825.18,289 823.946,289 C822.509,289 821.342,289.426 820.489,290.28 C819.614,291.132 819.187,292.344 819.187,293.893 L819.187,296.632 L816,296.632 L816,300.335 L819.187,300.335" id="Login-with-Facebook"></path>
+        </g>
+    </g>
+</svg>
