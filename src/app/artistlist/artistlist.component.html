@@ -2,7 +2,9 @@
   {{title}}
 </p>
 <ul>
-  <li *ngFor="let artist of artists; let idx = index">
-    <span>{{idx + 1}}) {{artist.name}} - <img src= {{artist.cover}}> </span>
+  <artist *ngFor="let artist of artists; let idx = index" [artist]="artist" (innerClick)="displayProfile($event)"></artist>
+    <!-- <span>{{idx + 1}}) {{artist.name}} - <img src= {{artist.cover}}> </span> -->
   </li>
 </ul>
+
+

@@ -6,13 +6,14 @@ import { ArtistlistComponent } from '../artistlist/artistlist.component';
 import { ShowsListComponent } from '../shows-list/shows-list.component';
 import { ShowComponent } from '../show/show.component';
 import { HomeComponent } from '../home/home.component';
+import { ArtistprofileComponent } from '../artistprofile/artistprofile.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'artistlist', component: ArtistlistComponent },
-  { path: 'artist/:id', component: ArtistComponent},
+  { path: 'artist/:id', component: ArtistprofileComponent},
   { path: 'show/:id', component: ShowComponent },
-  { path: 'showslist', component: ShowsListComponent}
+  { path: 'showslist', component: ShowsListComponent},
 ];
 
 @NgModule({

@@ -22,5 +22,7 @@ export class DataService {
     // console.log("Test")
     return this.perfomers;
   }
-
+displayProfile(artist: Artist){
+  
+}
 }

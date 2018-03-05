@@ -1,4 +1,5 @@
-<li class='artist card' (click)= >
-  <img src="{{artist.cover}}" alt="{{artist.name}}" >
+<li class='artist card'>
+ <a [routerLink]="['artistprofile', artist._id]" <img src="{{artist.cover}}" alt="{{artist.name}}" >
   {{artist.name}}
+</a>
 </li>
