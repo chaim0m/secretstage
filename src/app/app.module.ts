@@ -11,7 +11,7 @@ import { ArtistlistComponent } from './artistlist/artistlist.component';
 import { RouterModule, Routes } from '@angular/router';
 import { RoutingModule } from './routing/routing.module';
 import { HomeComponent } from './home/home.component';
-import { AddArtistComponent } from './add-artist/add-artist.component';
+// import { AddArtistComponent } from './add-artist/add-artist.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -29,14 +29,14 @@ import { ShowpageComponent } from './showpage/showpage.component';
     ArtistComponent,
     ArtistlistComponent,
     HomeComponent,
-    AddArtistComponent,
+    //AddArtistComponent,
     ArtistprofileComponent,
     ShowpageComponent
   ],
   imports: [
     BrowserModule,
     RoutingModule,
-    ReactiveFormsModule,
+   // ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [ArtistsService],

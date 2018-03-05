@@ -14,13 +14,14 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  let { name, description, geners, socialMedia, linktosongs } = req.body;
-  if (name && description && geners.length > 0 && socialMedia.length > 0 && linktosongs.length > 0) {
+  let { name, description, geners, socialMedia, linktosongs, eventTypes } = req.body;
+  if (name && description && geners.length > 0 && socialMedia.length > 0 
+    && linktosongs.length > 0 && eventTypes.length > 0) {
     let artist = new Artist({
       name: name,
       cover: 'http://bit.ly/2Fc981Q',
       genre: geners,
-      eventType: ['Public', 'house'],
+      eventType: eventTypes,
       description: description,
       socialMedia: socialMedia,
       linktosongs: linktosongs
@@ -40,6 +41,12 @@ router.post('/', (req, res) => {
 router.get('/genres', (req, res) => {
   const genres = ['Rock', 'Indie', 'Alternative'];
   res.send(genres);
+});
+
+router.get('/eventTypes', (req, res) => {
+  const eventTypes = ['Public', 'house'];
+  res.send(eventTypes);
+
 });
 
 router.get('/socialMediaLinks', (req, res) => {
