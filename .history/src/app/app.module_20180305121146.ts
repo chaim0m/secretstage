@@ -29,15 +29,15 @@ import { ShowpageComponent } from './showpage/showpage.component';
     ArtistComponent,
     ArtistlistComponent,
     HomeComponent,
-    AddArtistComponent,
-    ArtistprofileComponent,
-    ShowpageComponent
+    AddArtistComponent
   ],
   imports: [
     BrowserModule,
     RoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ArtistprofileComponent,
+    ShowpageComponent
   ],
   providers: [ArtistsService],
   bootstrap: [AppComponent]
