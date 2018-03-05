@@ -1,8 +1,6 @@
-import Artist from "./artist";
-
 export default class Show {
     _id: number;
-    artist: Artist;
+    artist: string;
     title: string;
     description: string;
     price: number;
