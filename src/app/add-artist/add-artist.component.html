@@ -1,0 +1,46 @@
+<div class="col-8">
+  <div class="form-group" [formGroup]="mainDescForm">
+    <label>Name</label>
+    <input type="text" class="form-control" placeholder="name" formControlName="name">
+
+    <label>Description</label>
+    <input type="text" class="form-control" placeholder="description" formControlName="description">
+
+    <label>Genre</label>
+    <br>
+
+    <div class="form-group form-check-inline" *ngFor="let genre of genres">
+      <input class="form-check-input" type="checkbox" value="{{genre}}" formControlName="genre" (change)="onCheckboxChange($event, genre)">{{genre}}
+    </div>
+
+  </div>
+
+  <div>
+    <form [formGroup]="socialMediaLinks" class="form-group" (ngSubmit)="OnSubmit(socialMediaLinks.value)">
+      <label for="">Social Media Links</label>
+
+      <div formArrayName="socialMediaItems" *ngFor="let item of socialMediaItems.controls; let i = index;">
+        <div [formGroupName]="i" class="form-inline">
+          <input type="url" class="form-control" formControlName="name" placeholder="" />
+          <button (click)="removeSocialMedia(i)">remove</button>
+        </div>
+      </div>
+      <button type="button" (click)="addToSocialMediaLinks()">Add More</button>
+    </form>
+
+    <form [formGroup]="linksToSongs" class="form-group" (ngSubmit)="OnSubmit(linksToSongs.value)">
+      <label for="">links to songs</label>
+
+      <div formArrayName="linksToSongItems" *ngFor="let item of linksToSongItems.controls; let i = index;">
+        <div [formGroupName]="i" class="form-inline">
+          <input type="url" class="form-control" formControlName="name" placeholder="" />
+          <button (click)="removeLinkToSong(i)">remove</button>
+
+        </div>
+      </div>
+      <button type="button" (click)="addLinkToSong()">Add More</button>
+    </form>
+    <div>
+
+      <button (click)="sendData()">Submit</button>
+    </div>
