@@ -22,11 +22,9 @@ export class AddArtistComponent implements OnInit {
   genres: any;
   name: string;
   checkboxes: any[];
-  eventTypes: any;
-  checkedEventTypes: string[];
+
   ngOnInit() {
     this.checkboxes = [];
-    this.checkedEventTypes = [];
     this.socialMediaLinks = this.formBuilder.group({
       socialMediaItems: this.formBuilder.array([this.createItem()])
     });
@@ -36,21 +34,11 @@ export class AddArtistComponent implements OnInit {
     this.mainDescForm = new FormGroup({
       name: new FormControl(),
       description: new FormControl(),
-      genre: new FormControl(),
-      eventType: new FormControl()
+      genre: new FormControl()
     });
     this.http.get(URL + 'genres').subscribe(
       data => {
         this.genres = data;
-      },
-      error => {
-        console.error(error);
-
-      }
-    );
-    this.http.get(URL + 'eventTypes').subscribe(
-      data => {
-        this.eventTypes = data;
       },
       error => {
         console.error(error);
@@ -96,15 +84,6 @@ export class AddArtistComponent implements OnInit {
       this.checkboxes.splice(index, 1);
     }
   }
-
-  onChangeEventType(event, value) {
-    if (event.target.checked) {
-      this.checkedEventTypes.push(value);
-    } else {
-      let index = this.checkedEventTypes.indexOf(value);
-      this.checkedEventTypes.splice(index, 1);
-    }
-  }
   get socialMedia(): any[] {
     let arr = [];
     for (let i of this.socialMediaItems.controls) {
@@ -127,15 +106,13 @@ export class AddArtistComponent implements OnInit {
     return arr;
   }
   sendData() {
-    console.log(this.checkedEventTypes);
     let { name, description } = this.mainDescForm.value;
     let objToSend = {
       name: name,
       description: description,
       geners: this.checkboxes,
       socialMedia: this.socialMedia,
-      linktosongs: this.linktosongs,
-      eventTypes: this.checkedEventTypes
+      linktosongs: this.linktosongs
     }
     this.http.post(URL, objToSend).subscribe(
       data => {

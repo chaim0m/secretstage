@@ -8,16 +8,11 @@
 
     <label>Genre</label>
     <br>
+
     <div class="form-group form-check-inline" *ngFor="let genre of genres">
       <input class="form-check-input" type="checkbox" value="{{genre}}" formControlName="genre" (change)="onCheckboxChange($event, genre)">{{genre}}
     </div>
-    <div>
-      <label>Event types</label>
-      <br>
-      <div class="form-group form-check-inline" *ngFor="let eventType of eventTypes">
-        <input class="form-check-input" type="checkbox" value="{{eventType}}" formControlName="eventType" (change)="onChangeEventType($event, eventType)">{{eventType}}
-      </div>
-    </div>
+
   </div>
 
   <div>

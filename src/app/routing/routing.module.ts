@@ -13,8 +13,8 @@ const routes: Routes = [
   { path: 'artistlist', component: ArtistlistComponent },
   { path: 'artist/:id', component: ArtistComponent},
   { path: 'show/:id', component: ShowComponent },
-  { path: 'showslist', component: ShowsListComponent}//,
- // { path: 'addArtist', component: AddArtistComponent}
+  { path: 'showslist', component: ShowsListComponent},
+  { path: 'addArtist', component: AddArtistComponent}
 ];
 
 @NgModule({
