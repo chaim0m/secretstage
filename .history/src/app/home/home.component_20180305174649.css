@@ -37,16 +37,4 @@
 
   .artist-name-thumbnail {
       color:white;
-      font-size: 24px;
-      letter-spacing: 0.3px;
-      text-align: center;
-  }
-
-  .show-more {
-    margin: 0 auto;
-    width: 139px;
-    height: 35px;
-    opacity: 0.2;
-    border-radius: 4px;
-    border: solid 2px #979797;
   }
