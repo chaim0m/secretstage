@@ -2,9 +2,20 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const logger = require('morgan');
+const mongoose = require('mongoose');
+
 const app = express();
 
 const artists = require('./routes/artists');
+const url = 'mongodb://localhost/secreStage';
+
+mongoose.connect(url, function (err, db) {
+  if (err) {
+    console.log('Unable to connect to the mongoDB server. Error:', err);
+  } else {
+    console.log('Connection established to', url);
+  }
+});
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -14,8 +25,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api/artists', artists);
 
-app.all('/*', function(req, res, next) {
-  res.sendFile('index.html', { root: __dirname });
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
 // catch 404 and forward to error handler
