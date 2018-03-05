@@ -16,13 +16,6 @@ const shows: Show[] = [
 @Injectable()
 export class ShowsService {
 
-  allShows: Show[] = shows;
-
   constructor() { }
-
-  getShows(): Show[] {
-    // console.log("Test")
-    return this.allShows;
-  }
 
 }
