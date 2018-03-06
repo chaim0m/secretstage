@@ -1,16 +1,13 @@
 <div class="col-8">
   <div class="form-group" [formGroup]="mainDescForm">
     <label>Name</label>
-    <input type="text" class="form-control" placeholder="name" formControlName="name">
+    <input type="text" class="form-control"  formControlName="name">
 
     <label>Description</label>
-    <input type="text" class="form-control" placeholder="description" formControlName="description">
+    <input type="text" class="form-control"  formControlName="description">
 
     <label>Genre</label>
-    <br>
-    <div class="form-group form-check-inline" *ngFor="let genre of genres">
-      <input class="form-check-input" type="checkbox" value="{{genre}}" formControlName="genre" (change)="onCheckboxChange($event, genre)">{{genre}}
-    </div>
+    <input type="text" class="form-control"  formControlName="Genre">
     <div>
       <label>Event types</label>
       <br>

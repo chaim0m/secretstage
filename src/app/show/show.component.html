@@ -142,7 +142,25 @@
       <br>Reserve your spot and pay at the event :)
       <br>
       <br>We can&#x27;t wait to meet you!</p>
-    <div class="rsvp-form w-form">
+      <div class="example-container">
+          <mat-form-field hintLabel="Max 10 characters">
+            <input matInput #input maxlength="10" placeholder="Please enter your name here">
+            <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
+            <input matInput placeholder="Enter your email" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+        
+          <mat-form-field>
+            <mat-select placeholder="Number of Guests">
+              <mat-option value="option">1</mat-option>
+              <mat-option value="option">2</mat-option>
+              <mat-option value="option">3</mat-option>
+              <mat-option value="option">4</mat-option>
+              <mat-option value="option">5</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+    <!-- <div class="rsvp-form w-form">
       <form id="wf-form-RSVP-Form" name="wf-form-RSVP-Form" data-name="RSVP Form" data-redirect="/thank-you" redirect="/thank-you"
         class="form-6">
         <div class="html-embed-4 w-embed">
@@ -161,6 +179,7 @@
           id="email" required="">
         <input type="submit" value="Apply" data-wait="Adding you to the guest list!" class="rsvp popup w-button">
       </form>
+      <div class="w-form-done"> -->
       <div class="w-form-done">
         <div>Thank you! Your submission has been received!</div>
       </div>
@@ -171,5 +190,4 @@
     <div class="text-block-22">* By applying, you agree to receive updates on upcoming secret shows.</div>
     <img src="images/close.png" data-ix="close-pup-rsvp-pop-up"
       class="close-pup-up">
-  </div>
 </body>

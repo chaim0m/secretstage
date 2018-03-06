@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const logger = require('morgan');
 const mongoose = require('mongoose');
-
+const Newartist = require('./serverModels/artistsModel');
 const app = express();
 
 const artists = require('./routes/artists');
@@ -25,6 +25,12 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api/artists', artists);
+// const addArtist = new Newartist(req.body);
+// addArtist.save(err => {  
+//   if (err) return res.status(500).send(err);
+//   return res.status(200).send(addArtist);
+// });
+
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
