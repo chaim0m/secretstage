@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ArtistsService } from '../artists.service';
+import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-artistprofile',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtistprofileComponent implements OnInit {
 
-  constructor() { }
+  constructor(private artistservice: ArtistsService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
   }
-
+  getMovie(params) {this.artistservice.displayArtist(num).subscribe(data => {
+      this.artist = data;
+    });
+  }
 }

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import Artist from './models/artist';
 import Show from './models/show';
+import { EventEmitter } from 'selenium-webdriver';
 
 const artists: Artist[] = [
   {_id: 1, name: 'Rex', cover: 'http://bit.ly/2Fc981Q', genre: ['Rock', 'Indie','Alternative'], eventType: ['Public', 'house'], description: "Awesome!", socialMedia: ['FB','Twitter','Instagram'], linktosongs: ['url soundcloud', 'url youtube']},
@@ -16,11 +17,16 @@ const artists: Artist[] = [
 @Injectable()
 export class ArtistsService {
   perfomers: Artist[] = artists;
+  displayMoreInfo = new EventEmitter();
   constructor() { }
 
   getArtists(): Artist[] {
     // console.log("Test")
     return this.perfomers;
+  }
+  displayArtist(id: string) {
+    // return this.http.get<Object>(`https://api/artists/${id}`);
+
   }
 
 }
