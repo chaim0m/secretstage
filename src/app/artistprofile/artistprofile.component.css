@@ -54,6 +54,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    padding-bottom: 5%;
   }
   
   .w-container {
@@ -270,7 +271,7 @@
 
   .open-to-play-heading {
     margin-top: 40px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
