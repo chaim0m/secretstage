@@ -4,3 +4,11 @@
   {{artist.name}}
  </a>
 </li> 
+
+<div class="artists-list-wrapper">
+    <div class="artist-item-thumbnail"><a [routerLink]="['artistprofile', artist._id]">
+        <img src="{{artist.cover}}" alt="Artist Name" >
+        <h3 class="artist-name-thumbnail">{{artist.name}}</h3>
+      </a>
+    </div>
+</div>

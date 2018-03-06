@@ -17,7 +17,7 @@ import { Observable } from 'rxjs/Observable';
 // ]
 @Injectable()
 export class ArtistsService {
-  perfomers: Artist[] = artists;
+  // perfomers: Artist[] = artists;
   constructor(private http: HttpClient) { }
 
   getArtists(): Observable<Artist[]> {

@@ -8,13 +8,16 @@ import Artist from '../models/artist';
   styleUrls: ['./artistlist.component.css']
 })
 export class ArtistlistComponent implements OnInit {
-  artists: Artist[];
+  artists: any;
   title: string;
-  constructor(private dataService: DataService) { }
+  isloading: boolean=true;
+  constructor(private artistservice: ArtistsService) { }
 
   ngOnInit() {
     this.title = "Artist List"
-    this.artists = this.dataService.getArtists();
+    // this.artists = this.artistservice.getArtists();
+    this.artistservice.getArtists().subscribe(artists=>{this.artists = artists; this.isloading=false; console.log(this.artists);}, 
+    error=>{console.log(error)})
   }
   // displayProfile(artist: Artist){
   //   this.dataService.displayProfile(artist);

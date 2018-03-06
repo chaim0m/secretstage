@@ -9,7 +9,7 @@ import { ArtistsService } from '../artists.service';
 })
 
 export class ArtistComponent implements OnInit {
-  // @Input() artist: Artist;
+  @Input() artist: Artist;
   // @Input() btnText: string;
   // @Output() innerClick: EventEmitter<Artist> = new EventEmitter<Artist>();
   
