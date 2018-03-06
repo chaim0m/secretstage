@@ -1,0 +1,32 @@
+.artists-list-wrapper {
+    display: grid;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-columns: 30% 30% 30% ;
+    grid-gap: 23px;
+    background-color: #fff;
+   
+  }
+  
+  .artist-item-thumbnail{
+    height: 200px; 
+    background-color: #444;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .artist-name-thumbnail {
+      color:white;
+      font-size: 24px;
+      letter-spacing: 0.3px;
+      text-align: center;
+  }
+  

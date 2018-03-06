@@ -13,7 +13,7 @@ import { ArtistprofileComponent } from '../artistprofile/artistprofile.component
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'artistlist', component: ArtistlistComponent },
-  { path: 'artist/:id', component: ArtistComponent},
+  { path: 'artist/:id', component: ArtistprofileComponent},
   { path: 'show/:id', component: ShowComponent },
   { path: 'showslist', component: ShowsListComponent},
   { path: 'artistprofile/:id', component: ArtistprofileComponent}//,
