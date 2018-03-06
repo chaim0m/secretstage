@@ -1,0 +1,29 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 35% 65% ;
+    grid-template-areas:
+
+    "sidebar content content";
+
+    background-color: #fff;
+    color: #444;
+    height: 100%;
+}
+
+  .event-image-sidebar {
+    grid-area: sidebar;
+}
+
+
+.content {
+    grid-area: content;
+    height: 100%;
+}
+
+.box {
+background-color: #444;
+color: #fff;
+border-radius: 5px;
+
+
+}
