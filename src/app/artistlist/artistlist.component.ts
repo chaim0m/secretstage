@@ -10,11 +10,14 @@ import Artist from '../models/artist';
 export class ArtistlistComponent implements OnInit {
   artists: Artist[];
   title: string;
-  constructor(private artistsService: ArtistsService) { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.title = "Artist List"
-    this.artists = this.artistsService.getArtists();
+    this.artists = this.dataService.getArtists();
   }
+  // displayProfile(artist: Artist){
+  //   this.dataService.displayProfile(artist);
+  // }
 
 }

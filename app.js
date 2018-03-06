@@ -7,7 +7,8 @@ const mongoose = require('mongoose');
 const app = express();
 
 const artists = require('./routes/artists');
-const url = 'mongodb://localhost/secreStage';
+// const url = 'mongodb://localhost/secreStage';
+const url = 'mongodb://teamsecretstage:1234@ds157528.mlab.com:57528/secretstagedb';
 
 mongoose.connect(url, function (err, db) {
   if (err) {

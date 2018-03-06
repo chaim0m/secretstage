@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import  Artist  from '../models/artist';
+import { ArtistsService } from '../artists.service';
 
 @Component({
   selector: 'artist',
@@ -12,13 +13,13 @@ export class ArtistComponent implements OnInit {
   // @Input() btnText: string;
   // @Output() innerClick: EventEmitter<Artist> = new EventEmitter<Artist>();
   
-  constructor() { }
+  constructor(artistservice: ArtistsService) { }
 
   ngOnInit() {
     
   }
 
-  clickFunc(){
-    this.innerClick.emit(this.artist);
-  }
+  // displayProfile(id){
+  //   this.artistservice.getArtistById(id)
+  // }
 }

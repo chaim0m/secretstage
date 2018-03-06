@@ -6,7 +6,6 @@ import { ArtistlistComponent } from '../artistlist/artistlist.component';
 import { ShowsListComponent } from '../shows-list/shows-list.component';
 import { ShowComponent } from '../show/show.component';
 import { HomeComponent } from '../home/home.component';
-import { ArtistprofileComponent } from '../artistprofile/artistprofile.component';
 import { AddArtistComponent } from '../add-artist/add-artist.component';
 import { ArtistprofileComponent } from '../artistprofile/artistprofile.component';
 
