@@ -8,6 +8,8 @@ import { ShowComponent } from '../show/show.component';
 import { HomeComponent } from '../home/home.component';
 import { ArtistprofileComponent } from '../artistprofile/artistprofile.component';
 import { AddArtistComponent } from '../add-artist/add-artist.component';
+import { ArtistprofileComponent } from '../artistprofile/artistprofile.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -15,7 +17,8 @@ const routes: Routes = [
   { path: 'artist/:id', component: ArtistprofileComponent},
   { path: 'show/:id', component: ShowComponent },
   { path: 'showslist', component: ShowsListComponent},
-  { path: 'addArtist', component: AddArtistComponent}
+  { path: 'artistprofile/:id', component: ArtistprofileComponent}//,
+  // { path: 'addArtist', component: AddArtistComponent}
 ];
 
 @NgModule({

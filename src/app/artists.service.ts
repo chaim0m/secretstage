@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import Artist from './models/artist';
 import Show from './models/show';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs/Observable';
 
 const artists: Artist[] = [
   {_id: 1, name: 'Rex', cover: 'http://bit.ly/2Fc981Q', genre: ['Rock', 'Indie','Alternative'], eventType: ['Public', 'house'], description: "Awesome!", socialMedia: ['FB','Twitter','Instagram'], linktosongs: ['url soundcloud', 'url youtube']},
@@ -16,11 +18,15 @@ const artists: Artist[] = [
 @Injectable()
 export class ArtistsService {
   perfomers: Artist[] = artists;
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   getArtists(): Artist[] {
     // console.log("Test")
     return this.perfomers;
+  }
+
+  getArtistById(id): Observable<Artist[]> {
+    return this.http.get<Artist[]>('/api/artists/'+id);
   }
 
 }

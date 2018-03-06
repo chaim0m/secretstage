@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="11px" viewBox="0 0 10 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>bullet</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#D11542" offset="0%"></stop>
+            <stop stop-color="#9A1449" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="AssetMaker" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="-Asset-Maker" transform="translate(-50.000000, -213.000000)" fill="url(#linearGradient-1)">
+            <circle id="bullet" cx="55" cy="218.664571" r="5"></circle>
+        </g>
+    </g>
+</svg>
