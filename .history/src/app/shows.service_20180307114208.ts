@@ -41,10 +41,10 @@ export class ShowsService {
     return this.allShows;
   }
 
-  // getShowByid(id:number):Show{
+  getShowByid(id:number):Show{
     //includes to check if this show id exist 
     //find the index on the shows array 
     //return this specific show 
-  // }
+  }
 
 }
