@@ -7,9 +7,13 @@ const Newartist = require('./serverModels/artistsModel');
 const app = express();
 
 const artists = require('./routes/artists');
+
+const shows = require('./routes/shows');
+
 // const url = 'mongodb://localhost/secreStage';
 const url = 'mongodb://teamsecretstage:1234@ds157528.mlab.com:57528/secretstagedb';
 // const url = 'https://api.mlab.com/api/1/databases/my-db/collections/artist?apiKey=ofBQUpc-sF_QVtu0hsRurzAeiyNMNP37';
+
 
 
 mongoose.connect(url, function (err, db) {
@@ -27,11 +31,15 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api/artists', artists);
+
+app.use('/api/shows', shows);
+
 // const addArtist = new Newartist(req.body);
 // addArtist.save(err => {  
 //   if (err) return res.status(500).send(err);
 //   return res.status(200).send(addArtist);
 // });
+
 
 
 app.get('*', (req, res) => {

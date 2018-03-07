@@ -27,10 +27,12 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+
   console.log(req.body);
   let { name, description, genres, socialMedia, linktosongs, eventTypes } = req.body;
   console.log(socialMedia, linktosongs, eventTypes);
   if (name && description && genres.length > 0 && socialMedia.length > 0 
+
     && linktosongs.length > 0 && eventTypes.length > 0) {
       console.log("got " + req.body);
     let artist = new Artist({

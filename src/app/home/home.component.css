@@ -1,4 +1,9 @@
 
+.header {
+  height: 400px;
+}
+
+
 
 /* artist-list-style */
 
@@ -48,3 +53,4 @@
     border-radius: 4px;
     border: solid 2px #979797;
   }
+

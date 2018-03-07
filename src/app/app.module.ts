@@ -20,8 +20,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { ArtistprofileComponent } from './artistprofile/artistprofile.component';
 import { ShowpageComponent } from './showpage/showpage.component';
+
+import { NavBarHeaderComponent } from './nav-bar-header/nav-bar-header.component';
+
 import { ShowPageDetailsComponent } from './show-page-details/show-page-details.component';
 import { ShowImgComponent } from './show-img/show-img.component';
+
 
 
 
@@ -37,8 +41,12 @@ import { ShowImgComponent } from './show-img/show-img.component';
     AddArtistComponent,
     ArtistprofileComponent,
     ShowpageComponent,
+
+    NavBarHeaderComponent,
+
     ShowPageDetailsComponent,
     ShowImgComponent
+
   ],
   imports: [
     BrowserModule,
