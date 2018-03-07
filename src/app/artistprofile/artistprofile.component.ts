@@ -17,9 +17,7 @@ import { EmbedVideoService } from 'ngx-embed-video';
 export class ArtistprofileComponent implements OnInit {
   artists: Artist[];
   id: String;
-  youtubeUrl = "https://www.youtube.com/watch?v=ZePcZQ3gZ38";
-  youtubeId = "ZePcZQ3gZ38";
-  constructor(private artistsService: ArtistsService, private route: ActivatedRoute, private embedService: EmbedVideoService) {
+  constructor(private artistsService: ArtistsService, private route: ActivatedRoute) {
   }
 
 
