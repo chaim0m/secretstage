@@ -20,6 +20,8 @@ const routes: Routes = [
   { path: 'artist/:id', component: ArtistprofileComponent},
   { path: 'artistlist/artistprofile/:id', component: ArtistprofileComponent},
   { path: 'addartist', component: AddArtistComponent},
+  { path: 'addartist/home', component: HomeComponent}
+
 
 ];
 
