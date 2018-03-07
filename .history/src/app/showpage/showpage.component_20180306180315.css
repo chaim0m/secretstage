@@ -1,0 +1,29 @@
+
+ /* show grid styling */
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 35% 65% ;
+    grid-template-areas:
+    "sidebar content";
+    /* background-color: rgb(179, 78, 78); */
+    color: #444;
+}
+
+ /* show image styling */
+  .event-image-sidebar {
+    grid-area: sidebar;
+    border-right: 1px solid rgb(196, 196, 196);
+    color: rgb(65, 65, 65);
+    height: 100vh;
+    position: relative;
+    padding: 50px;
+    overflow: visible;
+
+
+}
+
+.event-cover-img {
+  width: 100%;
+  height: 65vh;
+  background-color: rebeccapurple;
+}

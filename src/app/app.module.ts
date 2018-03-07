@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ArtistsService } from './artists.service';
+import { ShowsService } from './shows.service';
+
 import { ShowComponent } from './show/show.component';
 import { ShowsListComponent } from './shows-list/shows-list.component';
 import { ArtistComponent } from './artist/artist.component';
@@ -18,6 +20,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { ArtistprofileComponent } from './artistprofile/artistprofile.component';
 import { ShowpageComponent } from './showpage/showpage.component';
+import { ShowPageDetailsComponent } from './show-page-details/show-page-details.component';
+import { ShowImgComponent } from './show-img/show-img.component';
 
 
 
@@ -32,7 +36,9 @@ import { ShowpageComponent } from './showpage/showpage.component';
     HomeComponent,
     AddArtistComponent,
     ArtistprofileComponent,
-    ShowpageComponent
+    ShowpageComponent,
+    ShowPageDetailsComponent,
+    ShowImgComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +48,7 @@ import { ShowpageComponent } from './showpage/showpage.component';
     MatFormFieldModule,
     MatSelectModule
   ],
-  providers: [ArtistsService],
+  providers: [ArtistsService, ShowsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

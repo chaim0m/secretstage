@@ -1,0 +1,10 @@
+.wrapper {
+    display: grid;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-columns: 30% 70% ;
+    grid-gap: 23px;
+    background-color: rgb(170, 94, 94);
+   
+  }
