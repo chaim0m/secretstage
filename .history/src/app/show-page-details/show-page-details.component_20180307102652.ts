@@ -17,7 +17,7 @@ export class ShowPageDetailsComponent implements OnInit {
 
   ngOnInit() {
    this.allShows = this.showService.getShows();
-    console.log(this.allShows);
+    console.log(this.allShows[0]);
     console.log(this.allShows[1]);
   }
 

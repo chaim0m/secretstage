@@ -16,9 +16,8 @@ export class ShowPageDetailsComponent implements OnInit {
   constructor(private showService: ShowsService) { }
 
   ngOnInit() {
-   this.allShows = this.showService.getShows();
+    this.allShows=this.showService.getShows();
     console.log(this.allShows);
-    console.log(this.allShows[1]);
   }
 
 }

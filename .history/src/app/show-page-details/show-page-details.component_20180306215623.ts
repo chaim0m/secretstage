@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ShowsService } from '../shows.service';
-import Show  from '../models/show';
-
-
 
 @Component({
   selector: 'app-show-page-details',
@@ -11,14 +8,9 @@ import Show  from '../models/show';
 })
 export class ShowPageDetailsComponent implements OnInit {
 
-  allShows: Show[]=[];
-
   constructor(private showService: ShowsService) { }
 
   ngOnInit() {
-   this.allShows = this.showService.getShows();
-    console.log(this.allShows);
-    console.log(this.allShows[1]);
   }
 
 }
