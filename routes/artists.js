@@ -1,3 +1,4 @@
+
 const express = require('express');
 const router = express.Router();
 const Artist = require('../serverModels/artistsModel');
@@ -26,29 +27,36 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  console.log(req);
-  let { name, description, geners, socialMedia, linktosongs, eventTypes } = req.body;
-  if (name && description && geners.length > 0 && socialMedia.length > 0 
+
+  console.log(req.body);
+  let { name, description, genres, socialMedia, linktosongs, eventTypes } = req.body;
+  console.log(socialMedia, linktosongs, eventTypes);
+  if (name && description && genres.length > 0 && socialMedia.length > 0 
+
     && linktosongs.length > 0 && eventTypes.length > 0) {
+      console.log("got " + req.body);
     let artist = new Artist({
       name: name,
       cover: 'http://bit.ly/2Fc981Q',
-      genre: geners,
-      eventType: eventTypes,
+      genre: ['genres'],
+      eventType: ['eventTypes'],
       description: description,
       socialMedia: socialMedia,
       linktosongs: linktosongs
     });
+    console.log('wow'+artist)
     artist.save(function (err) {
       if (err) {
         res.status(500).send(err);
+        console.log("artist: "+artist)
       }
       else {
         res.send({ cod: 200, artist: artist });
       }
     });
   }
-  console.log(req.body);
+  // res.send("you");
+  // console.log(req.body);
 });
 
 router.get('/genres', (req, res) => {

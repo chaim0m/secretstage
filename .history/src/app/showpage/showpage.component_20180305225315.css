@@ -1,0 +1,28 @@
+
+ /* show grid styling */
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: 35% 65% ;
+    grid-template-areas:
+    "sidebar content content";
+    background-color: #b34e4e;
+    color: #444;
+    height: 100%;
+}
+
+ /* show image styling */
+  .event-image-sidebar {
+    grid-area: sidebar;
+    border-right: 1px solid rgb(196, 196, 196);
+    color: #fff;
+    height: 100%;
+}
+
+ /* show details styling */
+.event-details-sidebar{
+    grid-area: content;
+    height: 100%;
+    background-color: #444;
+    color: #fff;
+}
+

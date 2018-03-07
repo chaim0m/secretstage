@@ -1,0 +1,47 @@
+
+
+
+
+ /* show image styling */
+ .event-image-sidebar {
+    grid-area: sidebar;
+    /* border-right: 1px solid rgb(196, 196, 196); */
+    color: rgb(65, 65, 65);
+    height: 100vh;
+    padding: 50px;
+    position: sticky; 
+    overflow-x: hidden;
+}
+
+.event-cover-img {
+    width: 100%;
+    height: 65vh;
+    background-color: rgb(241, 231, 252);
+    background-image: url('/assets/images/Tomer-for-event-p-500.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .get-tickets {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 10px;
+  
+  }
+
+  .rsvp-btn {
+      width: 100%;
+      height: 50px;
+      border-radius: 4px;
+      color: white;
+      background-color: #d11542;
+  }
+
+  .limited-quentity {
+    font-size:12px;
+  }
+  
+  

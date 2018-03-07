@@ -4,7 +4,7 @@ import { FormGroup, FormArray, FormBuilder, Validators, FormControl } from '@ang
 import { HttpClient } from '@angular/common/http';
 import { error } from 'util';
 
-const URL = 'http://localhost:3000/api/artists/';
+const URL = 'http://localhost:3000/api/artists';
 
 @Component({
   selector: 'add-artist',
@@ -25,7 +25,8 @@ export class AddArtistComponent implements OnInit {
   eventTypes: any;
   checkedEventTypes: string[];
   ngOnInit() {
-    this.checkboxes = [];
+    // this.checkboxes = [];
+    this.eventTypes = ["bars And Restaurants","House Concerts", "Private Events", "Team Events"];
     this.checkedEventTypes = [];
     this.socialMediaLinks = this.formBuilder.group({
       socialMediaItems: this.formBuilder.array([this.createItem()])
@@ -33,34 +34,46 @@ export class AddArtistComponent implements OnInit {
     this.linksToSongs = this.formBuilder.group({
       linksToSongItems: this.formBuilder.array([this.createItem()])
     });
+    // this.genres = this.formBuilder.group({
+    //   genres: this.formBuilder.array([this.createItem()])
+    // });
     this.mainDescForm = new FormGroup({
       name: new FormControl(),
       description: new FormControl(),
-      genre: new FormControl(),
+      genres: new FormControl(),
       eventType: new FormControl()
     });
-    this.http.get(URL + 'genres').subscribe(
-      data => {
-        this.genres = data;
-      },
-      error => {
-        console.error(error);
+    // this.http.get(URL + 'genres').subscribe(
+    //   data => {
+    //     this.genres = data;
+    //   },
+    //   error => {
+    //     console.error(error);
 
-      }
-    );
-    this.http.get(URL + 'eventTypes').subscribe(
-      data => {
-        this.eventTypes = data;
-      },
-      error => {
-        console.error(error);
+    //   }
+    // );
+    // this.http.get(URL + 'eventTypes').subscribe(
+    //   data => {
+    //     this.eventTypes = data;
+    //   },
+    //   error => {
+    //     console.error(error);
 
-      }
-    )
+    //   }
+    // )
   }
+  // createItem(): FormGroup {
+  //   return this.formBuilder.group({
+  //     name: '',
+  //   });
+  // }
   createItem(): FormGroup {
     return this.formBuilder.group({
       name: '',
+      genres: '',
+      linksToSongItems: '',
+      socialMediaItems: ''
+
     });
   }
 
@@ -127,16 +140,17 @@ export class AddArtistComponent implements OnInit {
     return arr;
   }
   sendData() {
-    console.log(this.checkedEventTypes);
-    let { name, description } = this.mainDescForm.value;
+    // console.log(this.checkedEventTypes);
+    let { name, description, genres } = this.mainDescForm.value;
     let objToSend = {
       name: name,
       description: description,
-      geners: this.checkboxes,
+      genres: genres,
       socialMedia: this.socialMedia,
       linktosongs: this.linktosongs,
       eventTypes: this.checkedEventTypes
     }
+    console.log(objToSend);
     this.http.post(URL, objToSend).subscribe(
       data => {
         console.log(data);

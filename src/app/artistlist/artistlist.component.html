@@ -1,6 +1,6 @@
 <section class="artist-profiles-wrapper">
     <h1 class="public-events-title">Planning an Event? See who’s available!</h1>
-  <artist *ngFor="let artist of artists; let idx = index" [artist]="artist"></artist>
+ <div class="artists-list-wrapper"> <artist *ngFor="let artist of artists; let idx = index" [artist]="artist"></artist> </div>
     <!-- <span>{{idx + 1}}) {{artist.name}} - <img src= {{artist.cover}}> </span> -->
 </section>
 
