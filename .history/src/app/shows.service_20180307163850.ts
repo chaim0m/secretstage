@@ -35,10 +35,19 @@ export class ShowsService {
    }
 
 
+<<<<<<< HEAD
+  // getShowByid(id:number):Show{
+    //includes to check if this show id exist 
+    //find the index on the shows array 
+    //return this specific show 
+  // }
+
+=======
   getShows(): Observable<Show[]> {
     return this.http.get<Show[]>('/api/shows');
   }
   getShowById(id): Observable<Show[]> {
     return this.http.get<Show[]>('/api/show/'+id);
   }
+>>>>>>> b6d2d44978552bf5e0cabcdad5ecd8c7b4ec3c8b
 }
