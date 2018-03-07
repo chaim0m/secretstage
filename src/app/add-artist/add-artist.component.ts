@@ -26,6 +26,7 @@ export class AddArtistComponent implements OnInit {
   checkedEventTypes: string[];
   ngOnInit() {
     this.checkboxes = [];
+    this.eventTypes = ["bars And Restaurants","House Concerts", "Private Events", "Team Events"];
     this.checkedEventTypes = [];
     this.socialMediaLinks = this.formBuilder.group({
       socialMediaItems: this.formBuilder.array([this.createItem()])
@@ -39,24 +40,24 @@ export class AddArtistComponent implements OnInit {
       genre: new FormControl(),
       eventType: new FormControl()
     });
-    this.http.get(URL + 'genres').subscribe(
-      data => {
-        this.genres = data;
-      },
-      error => {
-        console.error(error);
+    // this.http.get(URL + 'genres').subscribe(
+    //   data => {
+    //     this.genres = data;
+    //   },
+    //   error => {
+    //     console.error(error);
 
-      }
-    );
-    this.http.get(URL + 'eventTypes').subscribe(
-      data => {
-        this.eventTypes = data;
-      },
-      error => {
-        console.error(error);
+    //   }
+    // );
+    // this.http.get(URL + 'eventTypes').subscribe(
+    //   data => {
+    //     this.eventTypes = data;
+    //   },
+    //   error => {
+    //     console.error(error);
 
-      }
-    )
+    //   }
+    // )
   }
   createItem(): FormGroup {
     return this.formBuilder.group({

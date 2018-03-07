@@ -13,14 +13,26 @@ router.get('/', (req, res) => {
   });
 });
 
+
+router.get('/:id', (req, res) => {
+  console.log(req.params);
+  Artist.findById(req.params.id, (err, result) => {
+    if(!err) {
+      res.send(result);
+    } else {
+      res.send(err);
+    }
+  });
+});
+
 router.post('/', (req, res) => {
-  let { name, description, geners, socialMedia, linktosongs, eventTypes } = req.body;
+  let { name, description, genres, socialMedia, linktosongs, eventTypes } = req.body;
   if (name && description && geners.length > 0 && socialMedia.length > 0 
     && linktosongs.length > 0 && eventTypes.length > 0) {
     let artist = new Artist({
       name: name,
       cover: 'http://bit.ly/2Fc981Q',
-      genre: geners,
+      genre: genres,
       eventType: eventTypes,
       description: description,
       socialMedia: socialMedia,

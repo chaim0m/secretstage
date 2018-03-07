@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>social-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="AssetMaker" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="-Asset-Maker" transform="translate(-58.000000, -609.000000)">
+            <g id="social-facebook" transform="translate(58.000000, 609.000000)">
+                <rect id="Rectangle-41" fill="#3C5A96" x="0" y="0" width="36" height="36" rx="18"></rect>
+                <path d="M16.8151278,15.2307573 L15,15.2307573 L15,17.9657476 L16.8151278,17.9657476 L16.8151278,26 L20.3055802,26 L20.3055802,17.9315728 L22.7407561,17.9315728 L23,15.2307573 L20.3055802,15.2307573 L20.3055802,13.6923107 C20.3055802,13.0554951 20.4445,12.8033786 21.111121,12.8033786 L22.9999579,12.8033786 L22.9999579,10 L20.5833355,10 C17.9861007,10 16.8151278,11.0554951 16.8151278,13.076932 L16.8151278,15.2307573 L16.8151278,15.2307573 Z" id="facebook-icon-2" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

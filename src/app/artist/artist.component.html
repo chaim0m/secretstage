@@ -1,4 +1,14 @@
-<!-- <li class='artist card' (click)= >
-  <img src="{{artist.cover}}" alt="{{artist.name}}" >
+<li class='artist card'>
+ <a [routerLink]="['artistprofile', artist._id]">
+    <img src="{{artist.cover}}" alt="Artist Name" >
   {{artist.name}}
-</li> -->
+ </a>
+</li> 
+
+<div class="artists-list-wrapper">
+    <div class="artist-item-thumbnail"><a [routerLink]="['artistprofile', artist._id]">
+        <img src="{{artist.cover}}" alt="Artist Name" >
+        <h3 class="artist-name-thumbnail">{{artist.name}}</h3>
+      </a>
+    </div>
+</div>
