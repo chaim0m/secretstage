@@ -9,6 +9,8 @@ const app = express();
 const artists = require('./routes/artists');
 // const url = 'mongodb://localhost/secreStage';
 const url = 'mongodb://teamsecretstage:1234@ds157528.mlab.com:57528/secretstagedb';
+// const url = 'https://api.mlab.com/api/1/databases/my-db/collections/artist?apiKey=ofBQUpc-sF_QVtu0hsRurzAeiyNMNP37';
+
 
 mongoose.connect(url, function (err, db) {
   if (err) {
@@ -48,7 +50,7 @@ app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
-
+console.log("error");
   // render the error page
   res.status(err.status || 500);
   res.render('error');
