@@ -1,5 +1,5 @@
 .artist-body {
-    height: 1500px;
+    height: 100%;
   }
 
 .artist-cover {
@@ -9,7 +9,7 @@
     display: flex;
     overflow: visible;
     width: 100%;
-    height: 18%;
+    height: 30%;
     padding-top: 170px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -24,8 +24,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    background-image: url('/assets/images/Tomer-for-event.png');
-    background-position: 50% -102px;
+    background-position: 50% -20px;
     background-size: cover;
   }
 

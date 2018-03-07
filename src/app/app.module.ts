@@ -26,7 +26,8 @@ import { NavBarHeaderComponent } from './nav-bar-header/nav-bar-header.component
 import { ShowPageDetailsComponent } from './show-page-details/show-page-details.component';
 import { ShowImgComponent } from './show-img/show-img.component';
 
-
+import { HttpModule } from '@angular/http';
+import { EmbedVideo } from 'ngx-embed-video';
 
 
 
@@ -54,7 +55,9 @@ import { ShowImgComponent } from './show-img/show-img.component';
    ReactiveFormsModule,
     HttpClientModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpModule,
+    EmbedVideo.forRoot()
   ],
   providers: [ArtistsService, ShowsService],
   bootstrap: [AppComponent]

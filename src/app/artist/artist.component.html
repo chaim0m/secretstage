@@ -5,11 +5,27 @@
  </a>
 </li>  -->
 <span>
-<div class="artists-list-wrapper">
-    <div class="artist-item-thumbnail"><a [routerLink]="['artistprofile', artist._id]">
-        <img src="{{artist.cover}}" alt="Artist Name" >
+<div class="artists-list-wrapper">    <a [routerLink]="['artistprofile', artist._id]">
+
+    <div class="artist-item-thumbnail" 
+    [ngStyle]="{'background-image': 'url(' + artist.cover +')',
+    'background-size': 'cover'  }">
         <h3 class="artist-name-thumbnail">{{artist.name}}</h3>
-      </a>
+      
     </div>
+  </a>
 </div>
 </span>
+
+
+
+<!-- 
+<span>
+  <div class="artists-list-wrapper">
+      <div class="artist-item-thumbnail"><a [routerLink]="['artistprofile', artist._id]">
+          <img class="artist-item-thumbnail" src="{{artist.cover}}" alt="Artist Name" >
+          <h3 class="artist-name-thumbnail">{{artist.name}}</h3>
+        </a>
+      </div>
+  </div>
+  </span> -->
