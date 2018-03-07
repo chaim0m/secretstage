@@ -26,6 +26,7 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+  console.log(req);
   let { name, description, geners, socialMedia, linktosongs, eventTypes } = req.body;
   if (name && description && geners.length > 0 && socialMedia.length > 0 
     && linktosongs.length > 0 && eventTypes.length > 0) {

@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { ArtistprofileComponent } from './artistprofile/artistprofile.component';
 import { ShowpageComponent } from './showpage/showpage.component';
+import { NavBarHeaderComponent } from './nav-bar-header/nav-bar-header.component';
 
 
 
@@ -31,7 +32,8 @@ import { ShowpageComponent } from './showpage/showpage.component';
     HomeComponent,
     //AddArtistComponent,
     ArtistprofileComponent,
-    ShowpageComponent
+    ShowpageComponent,
+    NavBarHeaderComponent
   ],
   imports: [
     BrowserModule,

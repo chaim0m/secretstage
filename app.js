@@ -7,8 +7,9 @@ const mongoose = require('mongoose');
 const app = express();
 
 const artists = require('./routes/artists');
-// const url = 'mongodb://localhost/secreStage';
-const url = 'mongodb://teamsecretstage:1234@ds157528.mlab.com:57528/secretstagedb';
+const shows = require('./routes/shows');
+ const url = 'mongodb://localhost/secreStage';
+//const url = 'mongodb://teamsecretstage:1234@ds157528.mlab.com:57528/secretstagedb';
 
 mongoose.connect(url, function (err, db) {
   if (err) {
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api/artists', artists);
+app.use('/api/shows', shows);
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
