@@ -4,13 +4,15 @@ const router = express.Router();
 const Show = require('../serverModels/showModel');
 
 router.post('/', (req, res) => {
+  console.log(req, req.body);
   let { artistId, title, price, date, location, time, description} = req.body;
+  console.log(title);
   let show = new Show({
     artist: artistId,
     title: title,
     price: price,
     date: date,
-    location: location,
+    location: location,   
     time: time,
     description: description
   });

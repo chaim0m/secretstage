@@ -30,11 +30,11 @@ router.post('/', (req, res) => {
 
   console.log(req.body);
   let { name, description, genres, socialMedia, linktosongs, eventTypes } = req.body;
-  console.log(socialMedia, linktosongs, eventTypes);
+  // console.log(socialMedia, linktosongs, eventTypes);
   if (name && description && genres.length > 0 && socialMedia.length > 0 
 
     && linktosongs.length > 0 && eventTypes.length > 0) {
-      console.log("got " + req.body);
+      // console.log("got " + req.body);
     let artist = new Artist({
       name: name,
       cover: 'http://bit.ly/2Fc981Q',
@@ -44,7 +44,7 @@ router.post('/', (req, res) => {
       socialMedia: socialMedia,
       linktosongs: linktosongs
     });
-    console.log('wow'+artist)
+    // console.log('wow'+artist)
     artist.save(function (err) {
       if (err) {
         res.status(500).send(err);

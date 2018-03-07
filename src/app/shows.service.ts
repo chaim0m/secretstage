@@ -34,7 +34,7 @@ export class ShowsService {
 
 
   getShows(): Observable<Show[]> {
-    return this.http.get<Show[]>('/api/showslist');
+    return this.http.get<Show[]>('/api/shows');
   }
   getShowById(id): Observable<Show[]> {
     return this.http.get<Show[]>('/api/show/'+id);

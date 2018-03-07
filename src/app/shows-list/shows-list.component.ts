@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ShowsService } from '../shows.service';
+import Show from '../models/show';
+
 
 @Component({
   selector: 'showslist',
@@ -19,3 +21,7 @@ export class ShowsListComponent implements OnInit {
   }
 
 }
+
+
+
+
