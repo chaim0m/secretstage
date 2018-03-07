@@ -1,9 +1,9 @@
 .nav-color{
-  color: red;
+  color: white;
 }
 
 .header-container {
-  background: url('/assets/images/secret-stage-overlay_lighter.jpg');
+  background-image: url('/assets/images/secret-stage-overlay_lighter.jpg');
   height: 100%;
   width: 100%;
   background-repeat: no-repeat, repeat;
