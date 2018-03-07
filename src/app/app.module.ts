@@ -23,7 +23,8 @@ import { ShowpageComponent } from './showpage/showpage.component';
 import { ShowPageDetailsComponent } from './show-page-details/show-page-details.component';
 import { ShowImgComponent } from './show-img/show-img.component';
 
-
+import { HttpModule } from '@angular/http';
+import { EmbedVideo } from 'ngx-embed-video';
 
 
 @NgModule({
@@ -46,7 +47,9 @@ import { ShowImgComponent } from './show-img/show-img.component';
    ReactiveFormsModule,
     HttpClientModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpModule,
+    EmbedVideo.forRoot()
   ],
   providers: [ArtistsService, ShowsService],
   bootstrap: [AppComponent]

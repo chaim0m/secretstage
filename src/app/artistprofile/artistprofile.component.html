@@ -1,10 +1,10 @@
 <div class="artist-body"> 
-  <div class="artist-cover">
+  <div class="artist-cover" [ngStyle]="{'background-image': 'url(' + artists.cover +')'}">
     <h1 class="artist-h1">{{artists.name}}</h1>
     <div class="genre-container w-container">
-      <div class="price-tag">${{artists.pricetag}}</div>
-      <div class="genre-tag">#{{artists.genre[0]}}</div>
-      <div class="genre-tag">#{{artists.genre[1]}} </div>
+      <!-- <div class="price-tag">${{artists.pricetag}}</div> -->
+      <div class="price-tag">#{{artists.genre1}}</div>
+      <div class="price-tag">#{{artists.genre2}} </div>
     </div>
   </div>
   <div class="host-a-show-background">
@@ -51,15 +51,11 @@
     <div class="row w-row">
       <div class="column-social w-col w-col-4">
         <h1 class="heading-social"></h1>
-        <a href="#" class="link-2">tomeryeshayahu.com</a>
+        <a href="{{artists.socialMedia[0]}}" target="_blank" class="link-2">Facebook</a>
       </div>
       <div class="column-social w-col w-col-4">
         <h1 class="heading-social"></h1>
-        <a href="{{artists.socialMedia}}" target="_blank" class="link-2">/Tomer Yeshayahu</a>
-      </div>
-      <div class="column-social w-col w-col-4">
-        <h1 class="heading-social"></h1>
-        <a href="https://www.facebook.com/TomerYeshayahuMusic/" target="_blank" class="link-2">@Tomer Yeshayahu</a>
+        <a href="{{artists.socialMedia[1]}}" target="_blank" class="link-2">Website</a>
       </div>
     </div>
   </div>
@@ -79,11 +75,11 @@
     <h1 class="artist-heading">Watch</h1>
     <div class="w-container">
       <div style="padding-top:56.17021276595745%" class="video-2 w-video w-embed">
-        <iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F-JQGz9o1I2k%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D-JQGz9o1I2k&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F-JQGz9o1I2k%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube"
-          scrolling="no" frameborder="0" allowfullscreen=""></iframe>
+          <iframe src="{{artists.linktosongs[0]}}" frameborder="0" allowfullscreen></iframe>
+
       </div>
     </div>
-    <h1 class="artist-heading">Listen</h1>
+    <!-- <h1 class="artist-heading">Listen</h1>
     <div class="html-embed-5 w-embed w-iframe">
       <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3324948309/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/artwork=small/transparent=true/"
         seamless="">
@@ -135,7 +131,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- <div class="section">
     <div class="div-block-2">
       <!-- <p class="paragraph">Join our newsletter to get updates on<br>our events and special offers</p>

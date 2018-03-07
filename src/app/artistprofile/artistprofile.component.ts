@@ -4,6 +4,8 @@ import Artist from '../models/artist';
 import { ActivatedRouteSnapshot, ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs/observable';
 import 'rxjs/add/operator/map';
+import { NgForOf } from '@angular/common';
+import { EmbedVideoService } from 'ngx-embed-video';
 
 @Component({
   selector: 'app-artistprofile',
@@ -15,7 +17,9 @@ import 'rxjs/add/operator/map';
 export class ArtistprofileComponent implements OnInit {
   artists: Artist[];
   id: String;
-  constructor(private artistsService: ArtistsService, private route: ActivatedRoute) {
+  youtubeUrl = "https://www.youtube.com/watch?v=ZePcZQ3gZ38";
+  youtubeId = "ZePcZQ3gZ38";
+  constructor(private artistsService: ArtistsService, private route: ActivatedRoute, private embedService: EmbedVideoService) {
   }
 
 
