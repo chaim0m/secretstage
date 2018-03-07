@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ShowsService } from '../shows.service';
 import Show  from '../models/show';
+import { ActivatedRouteSnapshot, ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs/observable';
+import 'rxjs/add/operator/map';
 
 
 
@@ -11,14 +14,22 @@ import Show  from '../models/show';
 })
 export class ShowPageDetailsComponent implements OnInit {
 
-  allShows: Show[]=[];
+  shows: Show[];
+  id: String;
 
-  constructor(private showService: ShowsService) { }
+  constructor(private showService: ShowsService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-   this.allShows = this.showService.getShows();
-    console.log(this.allShows);
-    console.log(this.allShows[1]);
+    this.id = this.route.snapshot.params.id
+    this.showService.getShowById(this.id).subscribe(
+      shows => {
+        this.shows = shows,
+          console.log(this.shows)
+      },
+      error => {
+        console.log(error)
+      }
+    )
   }
 
 }
