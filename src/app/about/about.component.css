@@ -34,6 +34,13 @@
     /* background-image: url('/assets/images/sky.jpg') */
     background-color: black;    
 }
+.team-names{
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    right:30%;
+}
+
   .container {
     position: relative;
     text-align: center;
@@ -93,5 +100,10 @@ img{
     left: 35%;
 }
 li{
+    padding: 5%
     /* text-decoration: bold; */
+}
+
+.namespace{
+    padding: 7px;
 }
