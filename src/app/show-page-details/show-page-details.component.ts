@@ -8,29 +8,28 @@ import 'rxjs/add/operator/map';
 
 
 @Component({
- selector: 'app-show-page-details',
- templateUrl: './show-page-details.component.html',
- styleUrls: ['./show-page-details.component.css']
+selector: 'app-show-page-details',
+templateUrl: './show-page-details.component.html',
+styleUrls: ['./show-page-details.component.css']
 })
 export class ShowPageDetailsComponent implements OnInit {
 
- @Input() show: Show;
- // id: String;
+@Input() show: Show;
+// id: String;
 
- constructor(private showService: ShowsService, private route: ActivatedRoute) { }
+constructor(private showService: ShowsService, private route: ActivatedRoute) { }
 
- ngOnInit() {
-   // this.id = this.route.snapshot.params.id
-   // this.showService.getShowById(this.id).subscribe(
-   //   shows => {
-   //     this.show = shows,
-   //       console.log(this.show)
-   //   },
-   //   error => {
-   //     console.log(error)
-   //   }
-   // )
-    console.log("showpage details" + this.show);
- }
+ngOnInit() {
+  // this.id = this.route.snapshot.params.id
+  // this.showService.getShowById(this.id).subscribe(
+  //   shows => {
+  //     this.show = shows,
+  //       console.log(this.show)
+  //   },
+  //   error => {
+  //     console.log(error)
+  //   }
+  // )
+}
 
 }

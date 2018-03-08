@@ -9,11 +9,13 @@ import { ShowpageComponent } from '../showpage/showpage.component';
 import { HomeComponent } from '../home/home.component';
 import { AddArtistComponent } from '../add-artist/add-artist.component';
 import { ArtistprofileComponent } from '../artistprofile/artistprofile.component';
+import { AboutComponent } from '../about/about.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'artistlist', component: ArtistlistComponent },
+  { path: 'about', component: AboutComponent },
 
   { path: 'showpage/:id', component: ShowpageComponent },
   { path: 'shows', component: ShowsListComponent},
