@@ -1,5 +1,4 @@
-
- /* show grid styling */
+/* show grid styling */
 .grid-wrapper {
     display: grid;
     grid-template-columns: 35% 65% ;
@@ -7,4 +6,4 @@
     "sidebar content";
     /* background-color: rgb(179, 78, 78); */
     color: #444;
-}
+ }

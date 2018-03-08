@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'artistlist', component: ArtistlistComponent },
 
-  { path: 'show/:id', component: ShowpageComponent },
+  { path: 'showpage/:id', component: ShowpageComponent },
   { path: 'shows', component: ShowsListComponent},
   { path: 'artist/:id', component: ArtistprofileComponent},
   { path: 'artistprofile/:id', component: ArtistprofileComponent},
