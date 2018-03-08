@@ -9,3 +9,13 @@
   background-repeat: no-repeat, repeat;
 
 }
+a{
+  cursor: pointer;
+
+}
+a:hover{
+  background-color:rgb(158,109,130);
+}
+#textcolor{
+  color: white;
+}
