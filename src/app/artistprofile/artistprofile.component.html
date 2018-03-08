@@ -1,3 +1,6 @@
+<nav-bar-header class="header">
+
+  </nav-bar-header>
 <div class="artist-body">
   <div class="artist-cover" [ngStyle]="{'background-image': 'url(' + artists.cover +')'}">
     <h1 class="artist-h1">{{artists.name}}</h1>
@@ -10,7 +13,7 @@
   <div class="host-a-show-background">
     <div class="next-open-date-container">
       <div class="div-block-20">
-        <div class="text-decorative">12/04/17</div>
+        <div class="text-decorative">12/04/18</div>
         <div class="title-h4">Next Open Date:</div>
       </div>
       <div class="div-block-20">
@@ -22,7 +25,7 @@
         <div class="title-h4">Host:</div>
       </div>
     </div>
-    <a href="#" class="button-host-a-show w-button">Host a show</a>
+    <!-- <a href="#" class="button-host-a-show w-button">Host a show</a> -->
   </div>
   <div class="open-to-play-heading">{{ artists.name }} is open to play:</div>
   <div class="event-types-section">
@@ -80,11 +83,7 @@
 
 
     <h1 class="artist-heading">Watch</h1>
-    <div class="w-container">
-      <a href={{artists.linktosongs}}><img src="{{artists.youtubepic}}"></a>
-        <iframe src="{{artists.linktosongs[0]}}" width="620" height="345" frameborder="0" allowfullscreen></iframe>
-</div>
-
+<iframe class="e2e-iframe-trusted-src" width="620" height="340" [src]='videoUrl'></iframe>
 
 
 <!-- <h1 class="artist-heading">Listen</h1>
@@ -154,15 +153,15 @@
         </div>
       </div>
     </div> -->
-<div class="footer-div">
+<!-- <div class="footer-div">
   <div class="footer-div-for-social">
     <div class="footer-heading">Let&#x27;s be friends</div>
     <a href="https://www.facebook.com/SecretStageShows/" target="_blank" class="faebooklikelink w-inline-block"></a>
-  </div>
-  <div class="footer-div-for-about">
+  </div> -->
+  <!-- <div class="footer-div-for-about">
     <div class="footer-heading">Company</div>
     <a href="contact.html" class="footer-link">About</a>
     <a href="contact.html" class="footer-link">Contact us</a>
-  </div>
+  </div> -->
 </div>
 </div>

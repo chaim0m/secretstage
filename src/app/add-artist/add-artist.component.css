@@ -1,0 +1,67 @@
+.addartist-form {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: block;
+}
+
+
+.form-text {
+    font-family: Lato, sans-serif;
+    padding-top: 2%;
+}
+
+
+.w-button {
+    display: inline-block;
+    padding: 9px 15px;
+    background-color: #3898EC;
+    color: white;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+  }
+
+.background-img-section {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    overflow: visible;
+    height: 100vh;
+    margin-top: 0px;
+    float: none;
+    clear: none;
+    background-image: url('/assets/images/secret-stage-overlay_lighter.jpg');
+    background-position: 50% 50%;
+    background-attachment: scroll;
+    font-family: Lato, sans-serif;
+  }
+
+.removebtn{
+    margin-left: 2%;
+  }
+
+.addmorebtn {
+      margin-top: 2%;
+  }
+
+
+.submit-form-btn {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.forminputbox{
+    margin-top: 2%;
+}
+
+.addartist-background {
+    background-image: url('https://images.unsplash.com/photo-1478860942514-87ec5d1338ac?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=28bb8bf3d7905ef0a3f5d811e60f6532&auto=format&fit=crop&w=750&q=80');
+    background-size: cover;
+}
