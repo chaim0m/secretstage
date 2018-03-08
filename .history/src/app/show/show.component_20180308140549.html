@@ -1,0 +1,15 @@
+<div class="public-events-dynamic-list w-clearfix w-dyn-items">
+    <div class="upcoming-events-thumbnail w-dyn-item">
+      <a class="public-events-link-block w-inline-block" [routerLink]="['showpage', show._id]">
+        <h1 class="heading">{{show.title}}</h1>
+        <div class="event-text-box">
+          <!-- <div></div> -->
+          <div class="black-box-location">{{show.date | date: 'd/M'}}</div>
+        </div>
+        <div class="event-text-box price">{{show.price}} ₪</div>
+        <div class="thumbnail-overlay"></div>
+
+        
+      </a>
+    </div>
+  </div>
