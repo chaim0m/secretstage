@@ -1,0 +1,10 @@
+
+
+<section class="public-shows-wrapper">
+    <h1 class="public-events-title">Upcoming Public Shows</h1>
+    <div class="artists-list-wrapper">   
+        <show *ngFor="let show of shows; let idx = index" [show]="show"></show> 
+    </div>
+
+
+</section>

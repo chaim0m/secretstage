@@ -1,0 +1,14 @@
+
+
+<section class="public-shows-wrapper">
+        <h1 class="public-events-title">Upcoming Public Shows</h1>
+
+<show *ngFor="let show of shows; let idx = index" [show]="show"></show>
+
+</section>
+<!-- 
+<section class="artist-profiles-wrapper">
+    <h1 class="public-events-title">Planning an Event? See who’s available!</h1>
+ <div class="artists-list-wrapper"> <artist *ngFor="let artist of artists; let idx = index" [artist]="artist"></artist> </div>
+    <!-- <span>{{idx + 1}}) {{artist.name}} - <img src= {{artist.cover}}> </span> -->
+
