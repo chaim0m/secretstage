@@ -1,11 +1,11 @@
 <div class="event-details-sidebar">
-    <h2 class="event-title">{{allShows.title}}</h2>
+    <h2 class="event-title">{{show.title}}</h2>
 
     <!-- event icons details time & location -->
     <div class="event-time-location-icons-wrapper">
       <div class="details-box">
         <img class="details-icon" src="/assets/images/icon-event-date2x.png" alt="event-date-icon" />
-        <p class="details-icon text">01/03/18</p>
+        <p class="details-icon text">{{show.date}}</p>
       </div>
       <div class="details-box">
           <img class="details-icon" src="/assets/images/icon-event-hour2x.png" alt="event-hour-icon" />
@@ -13,7 +13,7 @@
         </div>
         <div class="details-box">
             <img class="details-icon" src="/assets/images/icon-event-place2x.png" alt="event-location-icon" />
-            <p class="details-icon text">Tel-aviv</p>
+            <p class="details-icon text">{{show.location}}</p>
           </div>
 
         <!-- event icons details small event, acoustic-->
