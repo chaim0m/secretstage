@@ -16,7 +16,7 @@ import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browse
 
 
 export class ArtistprofileComponent implements OnInit {
-  artists: Artist[];
+  artists: Artist;
   id: String;
   dangerousUrl: string;
   trustedUrl: SafeUrl;

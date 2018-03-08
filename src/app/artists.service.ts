@@ -25,8 +25,8 @@ export class ArtistsService {
     return this.http.get<Artist[]>('/api/artists');
   }
 
-  getArtistById(id): Observable<Artist[]> {
-    return this.http.get<Artist[]>('/api/artists/'+id);
+  getArtistById(id): Observable<Artist> {
+    return this.http.get<Artist>('/api/artists/'+id);
   }
 
 }
