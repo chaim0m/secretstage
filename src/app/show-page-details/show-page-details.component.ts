@@ -30,7 +30,6 @@ ngOnInit() {
   //     console.log(error)
   //   }
   // )
-   console.log("showpage details" + this.show);
 }
 
 }

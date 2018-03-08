@@ -6,7 +6,7 @@
     <div class="event-time-location-icons-wrapper">
       <div class="details-box">
         <img class="details-icon" src="/assets/images/icon-event-date2x.png" alt="event-date-icon" />
-        <p class="details-icon text">{{show.date | date: 'd/M'}}</p>
+        <p class="details-icon text">{{show.date | date: 'd/M/y'}}</p>
       </div>
       <div class="details-box">
           <img class="details-icon" src="/assets/images/icon-event-hour2x.png" alt="event-hour-icon" />
@@ -44,13 +44,13 @@
       <!-- event artist and host details -->
  
       <div class="about-event">
-        <img class="round-img"src="/assets/images/tomer-4-p-500.jpeg">
+        <img class="round-img" src="{{show.event}}">
         <h4 class="about-event-h4">The Event</h4>
         <p class="about-event-text">{{show.description}}</p>
       </div>
  
       <div class="about-event">
-          <img class="round-img"src="/assets/images/tomer-4-p-500.jpeg">
+          <img class="round-img" src="{{show.hostimage}}">
           <h4 class="about-event-h4">The Host</h4>
           <p class="about-event-text">{{show.aboutHost}}</p>
         </div>
