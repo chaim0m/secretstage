@@ -13,7 +13,7 @@ import 'rxjs/add/operator/map';
 })
 export class ShowImgComponent implements OnInit {
 
- @Input() show: Show[];
+ @Input() show: Show;
 
  constructor() { }
 
