@@ -26,7 +26,7 @@ export class AddArtistComponent implements OnInit {
   checkedEventTypes: string[];
   ngOnInit() {
     // this.checkboxes = [];
-    this.eventTypes = ["bars And Restaurants","House Concerts", "Private Events", "Team Events"];
+    this.eventTypes = ["Bars And Restaurants","House Concerts", "Private Events", "Team Events"];
     this.checkedEventTypes = [];
     this.socialMediaLinks = this.formBuilder.group({
       socialMediaItems: this.formBuilder.array([this.createItem()])
@@ -151,6 +151,7 @@ export class AddArtistComponent implements OnInit {
       eventTypes: this.checkedEventTypes
     }
     console.log(objToSend);
+    
     this.http.post(URL, objToSend).subscribe(
       data => {
         console.log(data);

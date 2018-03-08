@@ -20,7 +20,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
 
   .artist-name-thumbnail {
@@ -30,3 +29,6 @@
       text-align: center;
   }
   
+  .artistbackground{
+    height: 20%,
+  }

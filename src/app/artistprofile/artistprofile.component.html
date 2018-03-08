@@ -1,16 +1,19 @@
-<div class="artist-body"> 
-  <div class="artist-cover">
+<nav-bar-header class="header">
+
+  </nav-bar-header>
+<div class="artist-body">
+  <div class="artist-cover" [ngStyle]="{'background-image': 'url(' + artists.cover +')'}">
     <h1 class="artist-h1">{{artists.name}}</h1>
     <div class="genre-container w-container">
-      <div class="price-tag">${{artists.pricetag}}</div>
-      <div class="genre-tag">#{{artists.genre[0]}}</div>
-      <div class="genre-tag">#{{artists.genre[1]}} </div>
+      <!-- <div class="price-tag">${{artists.pricetag}}</div> -->
+      <div class="price-tag">#{{artists.genre1}}</div>
+      <div class="price-tag">#{{artists.genre2}} </div>
     </div>
   </div>
   <div class="host-a-show-background">
     <div class="next-open-date-container">
       <div class="div-block-20">
-        <div class="text-decorative">12/04/17</div>
+        <div class="text-decorative">12/04/18</div>
         <div class="title-h4">Next Open Date:</div>
       </div>
       <div class="div-block-20">
@@ -22,7 +25,7 @@
         <div class="title-h4">Host:</div>
       </div>
     </div>
-    <a href="#" class="button-host-a-show w-button">Host a show</a>
+    <!-- <a href="#" class="button-host-a-show w-button">Host a show</a> -->
   </div>
   <div class="open-to-play-heading">{{ artists.name }} is open to play:</div>
   <div class="event-types-section">
@@ -51,15 +54,15 @@
     <div class="row w-row">
       <div class="column-social w-col w-col-4">
         <h1 class="heading-social"></h1>
-        <a href="#" class="link-2">tomeryeshayahu.com</a>
+        <a href="{{artists.socialMedia[0]}}" target="_blank" class="link-2">Facebook</a>
       </div>
       <div class="column-social w-col w-col-4">
         <h1 class="heading-social"></h1>
-        <a href="{{artists.socialMedia}}" target="_blank" class="link-2">/Tomer Yeshayahu</a>
+        <a href="{{artists.socialMedia[1]}}" target="_blank" class="link-2">Instagram</a>
       </div>
       <div class="column-social w-col w-col-4">
         <h1 class="heading-social"></h1>
-        <a href="https://www.facebook.com/TomerYeshayahuMusic/" target="_blank" class="link-2">@Tomer Yeshayahu</a>
+        <a href="{{artists.socialMedia[2]}}" target="_blank" class="link-2">Website</a>
       </div>
     </div>
   </div>
@@ -76,20 +79,19 @@
         <script async="" src="https://static.addtoany.com/menu/page.js"></script>
       </div>
     </div> -->
+
+
+
     <h1 class="artist-heading">Watch</h1>
-    <div class="w-container">
-      <div style="padding-top:56.17021276595745%" class="video-2 w-video w-embed">
-        <iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F-JQGz9o1I2k%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D-JQGz9o1I2k&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F-JQGz9o1I2k%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube"
-          scrolling="no" frameborder="0" allowfullscreen=""></iframe>
-      </div>
-    </div>
-    <h1 class="artist-heading">Listen</h1>
+<iframe class="e2e-iframe-trusted-src" width="620" height="340" [src]='videoUrl'></iframe>
+
+
+<!-- <h1 class="artist-heading">Listen</h1>
     <div class="html-embed-5 w-embed w-iframe">
-      <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3324948309/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/artwork=small/transparent=true/"
-        seamless="">
-        <a href="http://tomer.bandcamp.com/track/--13">כביש הערבה by Tomer Yeshayahu</a>
-      </iframe>
-    </div>
+        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2777163756/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=4126626971/transparent=true/" seamless><a href="http://mayajohanna.bandcamp.com/album/bells-in-our-stomachs">Bells In Our Stomachs by Maya Johanna</a></iframe>
+    </div> -->
+
+    <!--
     <h1 class="artist-heading">Photos</h1>
     <div data-animation="slide" data-duration="500" data-infinite="1" class="slider w-slider">
       <div class="w-slider-mask">
@@ -135,8 +137,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <!-- <div class="section">
+  </div> -->
+<!-- <div class="section">
     <div class="div-block-2">
       <!-- <p class="paragraph">Join our newsletter to get updates on<br>our events and special offers</p>
       <div class="form-wrapper w-form">
@@ -151,15 +153,15 @@
         </div>
       </div>
     </div> -->
-  <div class="footer-div">
-    <div class="footer-div-for-social">
-      <div class="footer-heading">Let&#x27;s be friends</div>
-      <a href="https://www.facebook.com/SecretStageShows/" target="_blank" class="faebooklikelink w-inline-block"></a>
-    </div>
-    <div class="footer-div-for-about">
-      <div class="footer-heading">Company</div>
-      <a href="contact.html" class="footer-link">About</a>
-      <a href="contact.html" class="footer-link">Contact us</a>
-    </div>
-  </div>
+<!-- <div class="footer-div">
+  <div class="footer-div-for-social">
+    <div class="footer-heading">Let&#x27;s be friends</div>
+    <a href="https://www.facebook.com/SecretStageShows/" target="_blank" class="faebooklikelink w-inline-block"></a>
+  </div> -->
+  <!-- <div class="footer-div-for-about">
+    <div class="footer-heading">Company</div>
+    <a href="contact.html" class="footer-link">About</a>
+    <a href="contact.html" class="footer-link">Contact us</a>
+  </div> -->
+</div>
 </div>
