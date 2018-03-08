@@ -28,6 +28,7 @@ import { ShowImgComponent } from './show-img/show-img.component';
 
 import { HttpModule } from '@angular/http';
 import { EmbedVideo } from 'ngx-embed-video';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -47,6 +48,7 @@ import { EmbedVideo } from 'ngx-embed-video';
 
     ShowPageDetailsComponent,
     ShowImgComponent,
+    AboutComponent,
 
   ],
   imports: [

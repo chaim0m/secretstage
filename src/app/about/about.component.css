@@ -1,0 +1,83 @@
+/* #teampic{
+    background-size: cover;
+    width: 100%;
+}
+.teamdiv{
+    position: relative;
+    height: 740px;
+    width:480px;
+}
+.artist-name-thumbnail {
+    position: absolute;
+    color:black;
+    font-size: 24px;
+    letter-spacing: 0.3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+/* .teamdiv{
+    height: 200px; 
+    background-color: #444;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } */
+.metacontainer{
+    height: 80%vh;
+    width: 80%vh;
+    background-image: url('/assets/images/sky.jpg')
+}
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    margin: 5px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    margin: 5px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    margin: 5px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    margin: 5px;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+img{
+    border-radius: 7px;
+}
