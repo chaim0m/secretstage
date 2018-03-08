@@ -71,11 +71,17 @@ text-decoration: none;
 
 .heading {
 text-align: center;
-color:rgb(58, 58, 58);
+color:white;
 font-size: 24px;
 letter-spacing: 0.3px;
 }
 
+.heading-name {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 0.3px;
+  }
 .event-text-box {
 position: relative;
 z-index: 6;
