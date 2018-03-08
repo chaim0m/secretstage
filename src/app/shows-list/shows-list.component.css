@@ -1,0 +1,19 @@
+.public-shows-wrapper {
+    width: 100%;
+  
+ }
+ .public-events-title{
+     text-align: center;
+ }
+ 
+ .shows-list-wrapper {
+        display: grid;
+        padding-bottom: 100px;
+        padding-top: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+        grid-template-columns: 50% 50% ;
+        grid-gap: 23px;
+        background-color: #fff;
+      
+ }

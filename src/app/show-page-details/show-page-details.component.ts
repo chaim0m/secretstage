@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ShowsService } from '../shows.service';
 import Show  from '../models/show';
 import { ActivatedRouteSnapshot, ActivatedRoute } from '@angular/router';
@@ -8,28 +8,29 @@ import 'rxjs/add/operator/map';
 
 
 @Component({
-  selector: 'app-show-page-details',
-  templateUrl: './show-page-details.component.html',
-  styleUrls: ['./show-page-details.component.css']
+selector: 'app-show-page-details',
+templateUrl: './show-page-details.component.html',
+styleUrls: ['./show-page-details.component.css']
 })
 export class ShowPageDetailsComponent implements OnInit {
 
-  shows: Show[];
-  id: String;
+@Input() show: Show;
+// id: String;
 
-  constructor(private showService: ShowsService, private route: ActivatedRoute) { }
+constructor(private showService: ShowsService, private route: ActivatedRoute) { }
 
-  ngOnInit() {
-    this.id = this.route.snapshot.params.id
-    this.showService.getShowById(this.id).subscribe(
-      shows => {
-        this.shows = shows,
-          console.log(this.shows)
-      },
-      error => {
-        console.log(error)
-      }
-    )
-  }
+ngOnInit() {
+  // this.id = this.route.snapshot.params.id
+  // this.showService.getShowById(this.id).subscribe(
+  //   shows => {
+  //     this.show = shows,
+  //       console.log(this.show)
+  //   },
+  //   error => {
+  //     console.log(error)
+  //   }
+  // )
+   console.log("showpage details" + this.show);
+}
 
 }

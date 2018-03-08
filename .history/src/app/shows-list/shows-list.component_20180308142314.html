@@ -1,7 +1,7 @@
-<section id="shows" class="public-shows-wrapper">
+<section class="public-shows-wrapper">
         <h1 class="public-events-title">Upcoming Public Shows</h1>
-    
-        <div class="shows-list-wrapper">  
+        <!-- <a id="shows"></a> -->
+        <div id="shows" class="shows-list-wrapper">  
             <show *ngFor="let show of shows; let idx = index" [show]="show"></show>
         </div>
      
