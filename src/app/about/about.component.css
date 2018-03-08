@@ -31,7 +31,8 @@
 .metacontainer{
     height: 80%vh;
     width: 80%vh;
-    background-image: url('/assets/images/sky.jpg')
+    /* background-image: url('/assets/images/sky.jpg') */
+    background-color: black;    
 }
   .container {
     position: relative;
@@ -74,10 +75,17 @@
 /* Centered text */
 .centered {
     position: absolute;
-    top: 40%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: left;
 }
 img{
     border-radius: 7px;
+}
+.secondary{
+    text-decoration: underline;
+}
+.hero-sector-logo{
+    position:absolute;
 }
