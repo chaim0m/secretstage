@@ -20,7 +20,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { ArtistprofileComponent } from './artistprofile/artistprofile.component';
 import { ShowpageComponent } from './showpage/showpage.component';
-
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { NavBarHeaderComponent } from './nav-bar-header/nav-bar-header.component';
 
 import { ShowPageDetailsComponent } from './show-page-details/show-page-details.component';
@@ -46,7 +46,7 @@ import { EmbedVideo } from 'ngx-embed-video';
     NavBarHeaderComponent,
 
     ShowPageDetailsComponent,
-    ShowImgComponent
+    ShowImgComponent,
 
   ],
   imports: [
@@ -57,7 +57,8 @@ import { EmbedVideo } from 'ngx-embed-video';
     MatFormFieldModule,
     MatSelectModule,
     HttpModule,
-    EmbedVideo.forRoot()
+    EmbedVideo.forRoot(),
+    ScrollToModule.forRoot()
   ],
   providers: [ArtistsService, ShowsService],
   bootstrap: [AppComponent]
