@@ -88,4 +88,10 @@ img{
 }
 .hero-sector-logo{
     position:absolute;
+    /* z-index: 1; */
+    top:3%;
+    left: 35%;
+}
+li{
+    /* text-decoration: bold; */
 }
