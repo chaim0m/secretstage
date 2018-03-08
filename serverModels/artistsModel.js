@@ -8,7 +8,7 @@ let artistSchema = new mongoose.Schema({
   eventType: [String],
   description: String,
   socialMedia: [String],
-  linktosongs: [String]
+  linktosongs: String
 });
 
 let Artist = mongoose.model('artist', artistSchema);
