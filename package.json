@@ -15,7 +15,6 @@
     "node": "8.9.4",
     "npm": "5.6.0"
   },
-  
   "dependencies": {
     "@angular/cli": "^1.7.3",
     "@angular/compiler-cli": "^5.2.8",
@@ -62,4 +61,3 @@
     "typescript": "~2.5.3"
   }
 }
-
