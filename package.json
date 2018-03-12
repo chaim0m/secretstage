@@ -5,12 +5,12 @@
   "main": "app.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng build --environment=prod",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod"
+    
   },
   "engines": {
     "node": "8.9.4",
@@ -63,3 +63,4 @@
     "typescript": "~2.5.3"
   }
 }
+
