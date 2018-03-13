@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ArtistsService } from '../artists.service'
 import Artist from '../models/artist';
 import { ActivatedRouteSnapshot, ActivatedRoute } from '@angular/router';
-import { Observable } from 'rxjs/observable';
+// import { Observable } from 'rxjs/observable';
 import 'rxjs/add/operator/map';
 import { NgForOf } from '@angular/common';
 import { EmbedVideoService } from 'ngx-embed-video';
