@@ -5,16 +5,13 @@
   "main": "app.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve ",
+    "start": "ng build --env=prod && node ./bin/www ",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "engines": {
-    "node": "8.9.4",
-    "npm": "5.6.0"
-  },
+  "private": true,
   "dependencies": {
     "@angular/animations": "^5.2.0",
     "@angular/cdk": "^5.2.3",
