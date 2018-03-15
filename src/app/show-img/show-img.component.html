@@ -1,5 +1,5 @@
 <div class="event-image-sidebar">
-    <div class="event-cover-img" [ngStyle]="{'background-image': 'url(' + show.image +')'}">
+    <div class="event-cover-img">
 
      </div>
      <div class="get-tickets">Want to attend this event?</div>
@@ -7,3 +7,4 @@
      <hr/>
      <p class="limited-quentity">** Spots are very limited for this show, so make sure to reserve your spot.</p>
   
+     <!-- [ngStyle]="{'background-image': 'url(' + show.image +')'}" cannot be inserted until image is part of show object, constraints due to mlab -->

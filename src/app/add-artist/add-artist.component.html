@@ -21,7 +21,8 @@
   </div>
 
   <div>
-    <form [formGroup]="socialMediaLinks" class="form-group" (ngSubmit)="OnSubmit(socialMediaLinks.value)">
+    <form [formGroup]="socialMediaLinks" class="form-group">
+        <!-- (ngSubmit)="onSubmit(socialMediaLinks.value)" -->
       <label class="form-text" for="">Social Media Links</label>
 
       <div formArrayName="socialMediaItems" *ngFor="let item of socialMediaItems.controls; let i = index;">
@@ -33,7 +34,8 @@
       <button class="addmorebtn" type="button" (click)="addToSocialMediaLinks()">Add More</button>
     </form>
 
-    <form [formGroup]="linksToSongs" class="form-group" (ngSubmit)="OnSubmit(linksToSongs.value)">
+    <form [formGroup]="linksToSongs" class="form-group">   
+        <!-- [ngStyle]="{'background-image': 'url(' + show.image +')'}" -->
       <label class="form-text" for="">Links To Songs</label>
 
       <div formArrayName="linksToSongItems" *ngFor="let item of linksToSongItems.controls; let i = index;">
