@@ -1,6 +1,6 @@
 <div class="public-events-dynamic-list w-clearfix w-dyn-items">
     <div class="upcoming-events-thumbnail w-dyn-item">
-      <a class="public-events-link-block w-inline-block" [routerLink]="['showpage', show._id]">
+      <a class="public-events-link-block w-inline-block" [routerLink]="['showpage', show._id]" [ngStyle]="{'background-image': 'url(' + show.image +')'}">
         <h1 class="heading">{{show.title}} </h1>
         <h1 class="heading-name">{{show.artist.name}}</h1>
         <div class="event-text-box">
@@ -14,5 +14,3 @@
       </a>
     </div>
   </div>
-
-  <!-- <!-- [ngStyle]="{'background-image': 'url(' + show.image +')'}" needs to be inserted after routerLink once image is part of show object. -->
