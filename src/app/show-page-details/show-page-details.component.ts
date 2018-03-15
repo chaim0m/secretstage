@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ShowsService } from '../shows.service';
 import Show  from '../models/show';
 import { ActivatedRouteSnapshot, ActivatedRoute } from '@angular/router';
-import { Observable } from 'rxjs/observable';
+import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
 

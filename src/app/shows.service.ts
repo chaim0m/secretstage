@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import Show from './models/show';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs/observable';
+import { Observable } from 'rxjs/Observable';
 
 
 // const artist : Artist[]=[];
